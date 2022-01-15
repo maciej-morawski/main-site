@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(47, 97, 148);
+}
+
+h2 {
+  color: #1460aa;
+}
+
+h3 {
+  width: 200px;
+  background-color: rgb(50, 116, 50);
+  border: black;
+  border-radius: 18%;
+  border-bottom: black dotted;
+}
+p {
+  color: black;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+img {
+  max-width: 50%;
+}
+
+#stopka {
+  background-color: rgb(63, 39, 2);
+  width: 50%;
+}
+
+#stopka:hover {
+  filter: brightness(150%);
+}
