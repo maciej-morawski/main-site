@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona główna</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+    <body>
+        <header class="header">
+            <nav class="navigation">
+              <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+              <a class="navigation__link" href="roadmap.html">Plan działania</a>
+              <a class="navigation__link" href="nauka.html">Nauka</a>
+            </nav>
+            </header>
+            <main class="main">
+                <header>
+                    <h1>Nauka HMTL</h1>
+                    <img src="pictures/html-code-to-create-a-form-min.png" alt="Formularz HMTL">
+                    <section>
+                        <h2>Formularze</h2>
+                    <ul classs="list">
+                        <li>form, input & label</li>
+                        <li>fieldset, radio , checkbox</li>
+                        <li>number , tel, emai, range, password, file</li>
+                        <li>select, textarea, submit</li>
+                        <li>GET i POST</li>
+                    </ul>
+                    </section>
+                </header>
+                <section>
+                    <h1>Formularz</h1>
+                    <form class="form">
+                    <p>
+                      <label for="firstName">Your name</label> 
+                      <input class="form__item" id="firstName" placeholder="Enter your name" name="firstName">
+                    </p>
+                    <p>
+                      <label for="lastName">Your last name</label> 
+                      <input class="form__item" id="lastName" placeholder="Enter your last name" name="lastName">
+                    </p>
+                    <p>
+                        <label for="phoneNumber">Your phone number</label> 
+                        <input class="form__item" type="number" id="phoneNumber" placeholder="Enter your phone number" name="phoneNumber">
+                      </p>
+                      <p>
+                        <label for="email">Your E:mail</label> 
+                        <input class="form__item" type="email" id="email" placeholder="Enter your E:mail" name="phoneNumber">
+                      </p>
+                      <p>
+                        <label for="password">Password</label> 
+                        <input class="form__item" type="password"  id="password" placeholder="Enter your password" name="password">
+                      </p>
+                      <p>
+                        <label for="file">Avatar</label> 
+                        <input class="form__item" type="file"  id="file"  name="file">
+                      </p>
+                    <fieldset class="fieldset">
+                      <legend>Adress</legend>
+                      <p>
+                        <label for="city">Please enter your city</label> 
+                        <input class="form__item" id="city" placeholder="Enter your city" name="city">
+                      </p>
+                      <p>
+                        <label for="firstName">Please enter your street name</label> 
+                        <input class="form__item" id="streetName" placeholder="Enter your street name" name="streetName">
+                      </p>
+                     </fieldset>
+
+                      <fieldset class="fieldset">
+                          <legend>Favourite icecream</legend>
+                          <p>
+                              <label><input name="iceCream"  type="radio" value="chocolate">chocolate</label>
+                          </p>
+                          <p>
+                            <label><input name="iceCream"  type="radio" value="lemon">lemon</label>
+                        </p>
+                        <p>
+                            <label><input name="iceCream" type="radio" value="strawberry">strawberry</label>
+                        </p>
+                      </fieldset>
+                        <p>
+                            <label><input name="agreeement" type="checkbox">I agree</label>
+                        </p>
+                        <p>
+                            <input type="submit" value="Send">
+                        </p>
+
+
+                    </form>
+                   
+                  
+                </section>
+
+
+            </main>
+
+           
+      <footer classs="footer" id="stopka">
+    Strona domowa Macieja Mórawskiego, treści pokazane na tej stronie są efektem mojej nauki.
+    Trzymajcie kciuki.
+  </footer>
+  <script src="main.js"></script>
+  </body>
+</hmtl>

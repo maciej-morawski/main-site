@@ -5,41 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona główna</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="roadmap.html">Plan działania</a>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="roadmap.html">Plan działania</a>
+        <a class="navigation__link" href="nauka.html">Nauka</a>
       </nav>
     </header>
 
-    <main>
-      <header>
-        <h1>Maciej Mórawski - Strona domowa <a href="#stopka">Zapraszam</a></h1>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">
+          Maciej Mórawski - Strona domowa <a href="#stopka">Zapraszam</a>
+        </h1>
       </header>
 
-      <section>
-        <h2>Kim jestem?</h2>
-        <img src="Maciej.jpg" alt="Maciej" />
-        <p>
-          Hej! Jestem poczatkującym i aspirującym programista frontend, na tej
-          stronie chce pokazać Ci moja podróż w głąb nauki programowania. Moje
-          wzloty i upadki, drogę jaka pokonam by zmienić swoje dotychczasowe
-          życie. Na co dzień interesuje się szeroko postrzegana technologia,
-          muzyka, uwielbiam robić zdjęcia otaczającego mnie świata. Moim hobby
-          jest chodzenie po górach i sport w każdej możliwej odmianie. Witam Cię
-          na mojej stronie, mam nadzieje, ze znajdziesz tutaj cos ciekawego dla
-          siebie.
+      <section class="about">
+        <h2 classs="about__heading">Kim jestem?</h2>
+        <img class="about__picture" src="pictures/Maciej.jpg" alt="Maciej" />
+        <p class="about__description">
+          Hej! Jestem poczatkującym i aspirującym programista frontend, na tej stronie chce pokazać
+          Ci moja podróż w głąb nauki programowania. Moje wzloty i upadki, drogę jaka pokonam by
+          zmienić swoje dotychczasowe życie. Na co dzień interesuje się szeroko postrzegana
+          technologia, muzyka, uwielbiam robić zdjęcia otaczającego mnie świata. Moim hobby jest
+          chodzenie po górach i sport w każdej możliwej odmianie. Witam Cię na mojej stronie, mam
+          nadzieje, ze znajdziesz tutaj cos ciekawego dla siebie.
         </p>
+        <p class="about__new"></p>
+      </section>
+      <section>
+        <h4>Lista fajnych znacznikow</h4>
+        <ul class="list">
+          <li class="list__item">UL</li>
+          <li class="list__item">OL</li>
+          <li class="list__item">SECTION</li>
+        </ul>
+        <h4>Opis wybranych zagadnien:</h4>
+        <dl>
+          <dt>DIV</dt>
+          <dd>Opis mojedo div</dd>
+
+          <dt>ARTICLE</dt>
+          <dd>Opis mojefo article</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h4>Kroki do poznania zagadnienia</h4>
+        <ol>
+          <li>Zapoznaj sie z tematem</li>
+          <li>Zrob to sam</li>
+          <li>Powtorz</li>
+        </ol>
+      </section>
+
+      <section>
+        <h4>Rozpiska kursu</h4>
+        <table class="table">
+          <caption>
+            Spis odcinkow WTF
+          </caption>
+          <thead>
+            <tr>
+              <th>lp</th>
+              <th>tytul</th>
+              <th>czas trwania</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Powitanie</td>
+              <td>5:45</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odio quam
+                exercitationem sequi ullam velit eum suscipit in enim officia, quaerat commodi
+                sapiente quae iure laudantium, praesentium molestiae delectus voluptatibus?
+              </td>
+              <td>12:45</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 
-    <footer id="stopka">
-      Strona domowa Macieja Mórawskiego, treści pokazane na tej stronie są
-      efektem mojej nauki. Trzymajcie kciuki.
+    <footer class="footer" id="stopka">
+      Strona domowa Macieja Mórawskiego, treści pokazane na tej stronie są efektem mojej nauki.
+      Trzymajcie kciuki.
     </footer>
     <script src="main.js"></script>
   </body>

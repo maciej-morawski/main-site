@@ -1,7 +1,20 @@
-body {
-  background-color: rgb(68, 122, 177);
+html {
+  box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+}
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 h2 {
   color: #1460aa;
 }
@@ -18,7 +31,7 @@ p {
 }
 
 a {
-  color: yellow;
+  color: rgb(27, 27, 20);
   text-decoration: none;
 }
 
@@ -31,10 +44,56 @@ img {
 }
 
 #stopka {
+  color: white;
   background-color: rgb(63, 39, 2);
   width: 50%;
+  margin: 0 auto;
 }
 
 #stopka:hover {
   filter: brightness(150%);
+}
+
+.main-heading {
+  color: white;
+}
+
+.navigation {
+  background: rgb(32, 104, 23);
+  border-radius: 8%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+.navigation__link {
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+}
+.navigation__link--homepage {
+  background: yellow;
+  color: black;
+}
+
+.list {
+  list-style: square;
+}
+
+.table {
+  width: 100%;
+}
+
+.form {
+}
+
+.form__item {
+  display: block;
+  width: 30%;
+}
+
+.fieldset {
+  width: 30%;
 }

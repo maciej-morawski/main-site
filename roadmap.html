@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona główna</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="roadmap.html">Plan działania</a>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="roadmap.html">Plan działania</a>
+        <a class="navigation__link" href="nauka.html">Nauka</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <header>
         <h1><a href="#stopka">Zapraszam</a></h1>
       </header>
-      <img src="road.png" alt="Ścieżka nauki" />
+      <img src="pictures/road.png" alt="Ścieżka nauki" />
 
       <section>
         <h2>Roadmapa nauki programowania.</h2>
@@ -27,43 +29,40 @@
           <h3>WTF: co ten frontend</h3>
           <p>
             Na początku zamierzam przerobić 13- tygodniowy kurs
-            <a href="https://cotenfrontend.pl">WTF</a>:co ten frontend wydany
-            przez Macieja Aniserowicza i Macieja Korsana, których to poczynania
-            śledzę na kanałach Social Media i to właśnie Oni mieli duży wpływ na
-            to że, postanowiłem zostać developerem.
+            <a href="https://cotenfrontend.pl">WTF</a>:co ten frontend wydany przez Macieja
+            Aniserowicza i Macieja Korsana, których to poczynania śledzę na kanałach Social Media i
+            to właśnie Oni mieli duży wpływ na to że, postanowiłem zostać developerem.
           </p>
         </article>
 
         <article>
           <h3>Samuraj programowania</h3>
           <p>
-            Kolejnym krokiem by lepiej poznać tajniki jeżyka Javascript będzie
-            poznanie przeze mnie kursu Programowanie w Javascript stworzonego
-            przez Samuraja Programowania.
+            Kolejnym krokiem by lepiej poznać tajniki jeżyka Javascript będzie poznanie przeze mnie
+            kursu Programowanie w Javascript stworzonego przez Samuraja Programowania.
           </p>
         </article>
 
         <article>
           <h3>Przeprogramowani.pl</h3>
           <p>
-            Czekam z niecierpliwością na udostepnienie kursu Opanuj Javascript
-            wydany przez Przeprogramowanych.
+            Czekam z niecierpliwością na udostepnienie kursu Opanuj Javascript wydany przez
+            Przeprogramowanych.
           </p>
         </article>
 
         <article>
           <h3>Hello Roman</h3>
           <p>
-            Kolejnym krokiem będzie poznanie przeze mnie frameworka jakim jest
-            React JS, w tym celu będę chciał wykonać kurs Hello Romana- React-
-            wprowadzenie dostępny na eduweb.pl.
+            Kolejnym krokiem będzie poznanie przeze mnie frameworka jakim jest React JS, w tym celu
+            będę chciał wykonać kurs Hello Romana- React- wprowadzenie dostępny na eduweb.pl.
           </p>
         </article>
       </section>
     </main>
-    <footer id="stopka">
-      Strona domowa Macieja Mórawskiego, treści pokazane na tej stronie są
-      efektem mojej nauki. Trzymajcie kciuki.
+    <footer class="footer" id="stopka">
+      Strona domowa Macieja Mórawskiego, treści pokazane na tej stronie są efektem mojej nauki.
+      Trzymajcie kciuki.
     </footer>
     <script src="main.js"></script>
   </body>
