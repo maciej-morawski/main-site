@@ -1,3 +1,11 @@
+// hamburger menu z js
+const hamburger = document.querySelector(".hamburger--js");
+
+hamburger.addEventListener("click", () => {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+});
+
 // varibales
 console.log("Witam Cie serdecznie na mojej stronie");
 
@@ -50,3 +58,14 @@ function createContent(querySelectorContent, content) {
 }
 
 createContent(".about__new", "Witajcie! </br>Udalo mi sie to zrobic!!!!");
+
+// event js
+
+const button = document.querySelector(".action--js");
+
+const myClick = () => {
+  const heading = document.querySelector(".main__heading--js");
+  heading.innerHTML = "Dodany click na buton JS event";
+};
+
+button.addEventListener("click", myClick);
